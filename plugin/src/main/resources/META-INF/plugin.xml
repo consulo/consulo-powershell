@@ -1,0 +1,8 @@
+<consulo-plugin url="https://github.com/consulo/consulo-powershell">
+    <id>consulo.powershell</id>
+    <name>PowerShell</name>
+    <depends optional="true">consulo.dap</depends>
+    <description>PowerShell language editing and script execution.</description>
+    <vendor>Consulo</vendor>
+    <tags><tag>languages</tag></tags>
+</consulo-plugin>

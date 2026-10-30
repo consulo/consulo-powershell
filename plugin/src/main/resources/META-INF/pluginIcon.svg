@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  - SPDX-FileCopyrightText: 2026 intellij-powershell contributors <https://github.com/intellij-powershell/intellij-powershell>
+  -
+  - SPDX-License-Identifier: Apache-2.0
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+  width="16"
+  height="16"
+  viewBox="0 0 16 16"
+  version="1.1"
+  id="svg1"
+  inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+  sodipodi:docname="pluginIcon.svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#dddddd"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="49.065291"
+     inkscape:cx="5.9614443"
+     inkscape:cy="8.6211656"
+     inkscape:window-width="1916"
+     inkscape:window-height="2041"
+     inkscape:window-x="5751"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient2"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#5391fe;stop-opacity:1;"
+         offset="0"
+         id="stop2" />
+      <stop
+         style="stop-color:#3e6dbf;stop-opacity:1;"
+         offset="1"
+         id="stop3" />
+    </linearGradient>
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="linearGradient3"
+       x1="1.7950557"
+       y1="0.29272026"
+       x2="2.4382775"
+       y2="3.9406126"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.5549424,0,0,3.7795273,0.474632,9.1e-7)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect1"
+       style="fill:url(#linearGradient3);stroke:#6c707e;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 3.6324991,2.5 H 14.114501 c 0.483919,0 0.968404,0.418695 0.8735,0.9166665 l -1.747,9.1666655 c -0.09491,0.497973 -0.389581,0.916667 -0.8735,0.916667 H 1.885499 c -0.483919,0 -0.96840436,-0.418695 -0.8735,-0.916667 L 2.7589991,3.4166665 C 2.8538991,2.918695 3.1485801,2.5 3.6324991,2.5 Z"
+       sodipodi:nodetypes="sssssssss" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+       d="m 6.25,4.75 3,3 -4.75,3.75"
+       id="path3"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+       d="m 7.5,11.45 h 2.75"
+       id="path4"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

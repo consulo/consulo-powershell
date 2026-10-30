@@ -1,0 +1,168 @@
+# SPDX-License-Identifier: Apache-2.0
+
+ui.cannot.find.powershell.executable.in.path:
+    text: "Cannot find PowerShell executable in PATH"
+ui.run.powershell.script:
+    text: "Run PowerShell script"
+ui.select.a.powershell.script:
+    text: "Select a PowerShell script"
+ui.script.does.not.exist.0:
+    text: "Script does not exist: {0}"
+ui.specify.the.powershell.executable:
+    text: "Specify the PowerShell executable"
+ui.powershell.executable:
+    text: "PowerShell executable"
+ui.script.path:
+    text: "Script path"
+ui.working.directory:
+    text: "Working directory"
+ui.powershell.options:
+    text: "PowerShell options"
+ui.script.arguments:
+    text: "Script arguments"
+ui.powershell:
+    text: "PowerShell"
+ui.run.a.powershell.script:
+    text: "Run a PowerShell script"
+ui.powershell.script:
+    text: "PowerShell script"
+ui.create.a.powershell.script:
+    text: "Create a PowerShell script"
+ui.new.powershell.script.0:
+    text: "New PowerShell script {0}"
+ui.new.powershell.file:
+    text: "New PowerShell file"
+ui.powershell.file:
+    text: "PowerShell file"
+ui.keyword:
+    text: "Keyword"
+ui.comment:
+    text: "Comment"
+ui.number:
+    text: "Number"
+ui.string:
+    text: "String"
+ui.command.name:
+    text: "Command name"
+ui.command.parameter:
+    text: "Command parameter"
+ui.type.name:
+    text: "Type name"
+ui.type.reference:
+    text: "Type reference"
+ui.variable.name:
+    text: "Variable name"
+ui.property.access:
+    text: "Property access"
+ui.method.call:
+    text: "Method call"
+ui.method.declaration:
+    text: "Method declaration"
+ui.label:
+    text: "Label"
+ui.sub.expression.parentheses:
+    text: "Sub-expression parentheses"
+ui.within:
+    text: "Within"
+ui.data.left.brace:
+    text: "''data'' left brace"
+ui.before.left.brace:
+    text: "Before left brace"
+ui.trap.left.brace:
+    text: "''trap'' left brace"
+ui.before.colon:
+    text: "Before colon"
+ui.other:
+    text: "Other"
+ui.after.colon:
+    text: "After colon"
+ui.simple.hash.literals.in.one.line:
+    text: "Simple hash literals in one line"
+ui.keep.when.reformatting:
+    text: "Keep when reformatting"
+ui.catch.type.list:
+    text: "Catch type list"
+ui.do.not.wrap:
+    text: "Do not wrap"
+ui.wrap.if.long:
+    text: "Wrap if long"
+ui.wrap.always:
+    text: "Wrap always"
+ui.chop.down.if.long:
+    text: "Chop down if long"
+ui.align.when.multiline:
+    text: "Align when multiline"
+ui.attribute.arguments:
+    text: "Attribute arguments"
+ui.pipeline:
+    text: "Pipeline"
+ui.block.parameters:
+    text: "Block parameters"
+ui.new.line.after:
+    text: "New line after ''(''"
+ui.place.on.new.line:
+    text: "Place '')'' on new line"
+ui.declaration:
+    text: "Declaration"
+ui.write.object.value.to.standard.output:
+    text: "Write object value to standard output"
+ui.function.with.no.parameters:
+    text: "Function with no parameters"
+ui.function.with.parameters:
+    text: "Function with parameters"
+ui.for.loop.snippet:
+    text: "''for'' loop snippet"
+ui.foreach.loop.snippet:
+    text: "''foreach'' loop snippet"
+ui.if.statement.snippet:
+    text: "''if'' statement snippet"
+ui.else.statement.snippet:
+    text: "''else'' statement snippet"
+ui.while.loop.snippet:
+    text: "''while'' loop snippet"
+ui.class.definition.snippet:
+    text: "Class definition snippet"
+ui.script.cmdlet.definition.snippet:
+    text: "Script cmdlet definition snippet"
+ui.class.constructor.definition.snippet:
+    text: "Class constructor definition snippet"
+ui.do.until.loop.snippet:
+    text: "''do until'' loop snippet"
+ui.do.while.loop.snippet:
+    text: "''do while'' loop snippet"
+ui.dsc.ensure.enum.definition.snippet:
+    text: "DSC Ensure enum definition snippet"
+ui.class.based.dsc.resource.provider.snippet:
+    text: "Class-based DSC resource provider snippet"
+ui.function.based.dsc.resource.provider.snippet:
+    text: "Function-based DSC resource provider snippet"
+ui.elseif.statement.snippet:
+    text: "''elseif'' statement snippet"
+ui.example.advanced.workflow.snippet:
+    text: "Example: advanced workflow snippet"
+ui.example.class.snippet.with.a.constructor.property.and.a.method:
+    text: "Example: class snippet with a constructor, property and a method"
+ui.parameter.declaration.snippet:
+    text: "Parameter declaration snippet"
+ui.basic.skeleton.for.a.powershell.module.manifest:
+    text: "Basic skeleton for a PowerShell module manifest"
+ui.class.property.definition.snippet:
+    text: "Class property definition snippet"
+ui.switch.statement.snippet:
+    text: "''switch'' statement snippet"
+ui.try.catch.snippet:
+    text: "try -catch snippet"
+ui.foreach.parallel.snippet.for.use.inside.a.workflow:
+    text: "foreach -parallel snippet (for use inside a workflow)"
+ui.statement:
+    text: "Statement"
+ui.incomplete.declaration:
+    text: "Incomplete declaration"
+usage.type.type:
+    text: "type"
+usage.type.variable:
+    text: "variable"
+usage.type.function:
+    text: "function"
+usage.type.reference:
+    text: "reference"

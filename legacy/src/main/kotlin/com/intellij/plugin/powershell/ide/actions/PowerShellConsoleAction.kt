@@ -1,0 +1,34 @@
+/*
+ * SPDX-FileCopyrightText: 2018 Andrey Dernov <https://github.com/ant-druha/>
+ * SPDX-FileCopyrightText: 2025-2026 intellij-powershell contributors <https://github.com/intellij-powershell/intellij-powershell>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+package com.intellij.plugin.powershell.ide.actions
+
+import com.intellij.openapi.actionSystem.AnAction
+import com.intellij.openapi.actionSystem.AnActionEvent
+import com.intellij.openapi.progress.ProgressIndicator
+import com.intellij.openapi.progress.ProgressManager
+import com.intellij.openapi.progress.Task
+import com.intellij.plugin.powershell.ide.MessagesBundle
+import com.intellij.plugin.powershell.lang.lsp.LanguageServer
+
+class PowerShellConsoleAction : AnAction() {
+
+  override fun actionPerformed(e: AnActionEvent) {
+    val project = e.project ?: return
+    val server = LanguageServer.getInstance(project).serverWithConsoleProcess.value
+    ProgressManager.getInstance().run(object : Task.Backgroundable(
+      project,
+      MessagesBundle.message("powershell-console.progress.title"),
+      /* canBeCancelled = */ false
+    ) {
+      override fun run(indicator: ProgressIndicator) {
+        indicator.text = MessagesBundle.message("powershell-console.progress.text")
+        server.start()
+      }
+    })
+  }
+}

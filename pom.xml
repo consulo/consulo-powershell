@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>consulo</groupId>
+        <artifactId>arch.bind.java</artifactId>
+        <version>3-SNAPSHOT</version>
+        <relativePath />
+    </parent>
+    <groupId>consulo.plugin</groupId>
+    <artifactId>consulo.powershell.parent</artifactId>
+    <version>3-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <properties>
+        <skipTests>true</skipTests>
+    </properties>
+    <repositories>
+        <repository>
+            <id>consulo</id>
+            <url>https://maven.consulo.dev/repository/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>interval:60</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+    <modules>
+        <module>core</module>
+        <module>debugger</module>
+        <module>plugin</module>
+    </modules>
+</project>

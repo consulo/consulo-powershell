@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: Apache-2.0
+
+ui.powershell.debugger:
+    text: "PowerShell Debugger"
+ui.powershell.editor.services.directory.or.start.editorservices.ps1:
+    text: "PowerShell Editor Services directory or Start-EditorServices.ps1"
+ui.cannot.find.start.editorservices.ps1.in.the.selected.location:
+    text: "Cannot find Start-EditorServices.ps1 in the selected location"
+ui.powershell.line.breakpoints:
+    text: "PowerShell line breakpoints"
+ui.configure.the.powershell.editor.services.location.in.settings.execution.power:
+    text: "Configure the PowerShell Editor Services location in Settings | Execution | PowerShell Debugger"
+ui.start.editorservices.ps1.was.not.found:
+    text: "Start-EditorServices.ps1 was not found"
+ui.debug.session.was.cancelled:
+    text: "Debug session was cancelled"
+ui.powershell.editor.services.exited.during.startup.see.the.debug.console.and.0:
+    text: "PowerShell Editor Services exited during startup; see the Debug console and {0}"
+ui.powershell.editor.services.failed.see.0:
+    text: "PowerShell Editor Services failed; see {0}"
+debug.adapter.startup.timeout:
+    text: "Timed out waiting for PowerShell Editor Services; see {0}"
+
+debug.startup.failed:
+    text: "PowerShell debugger could not start: {0}"

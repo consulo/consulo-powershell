@@ -1,0 +1,11 @@
+# Default IDE ignored files
+/workspace.xml
+/libraries
+/compiler.xml
+/copyright
+/encodings.json
+/misc.xml
+/modules.xml
+/vcs.json
+/.name
+/uiDesigner.xml

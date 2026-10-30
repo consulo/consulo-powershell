@@ -1,0 +1,17 @@
+Consulo PowerShell
+
+This product includes code and resources derived from intellij-powershell:
+https://github.com/intellij-powershell/intellij-powershell
+
+Upstream attribution:
+  Andrey Dernov <https://github.com/ant-druha/>
+  intellij-powershell contributors
+  <https://github.com/intellij-powershell/intellij-powershell>
+
+The upstream code is licensed under the Apache License, Version 2.0.
+A copy of that license is included in LICENSE. Copyright notices and
+file-specific attribution are preserved in source headers and .license files.
+
+The Consulo port adapts the upstream implementation to Consulo platform APIs,
+Java and Maven, with language injection in the core library and optional
+PowerShell Editor Services debugging through Consulo's DAP integration.

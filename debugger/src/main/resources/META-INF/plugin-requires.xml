@@ -1,0 +1,5 @@
+<consulo-plugin-requires>
+    <plugins>
+        <plugin>consulo.dap</plugin>
+    </plugins>
+</consulo-plugin-requires>
