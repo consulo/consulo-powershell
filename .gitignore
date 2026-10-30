@@ -72,3 +72,9 @@ gradle-app.setting
 
 # Kotlin compiler's temporary files
 /.kotlin/
+
+# Maven
+**/target/
+
+# Isolated Consulo runtime
+**/sandbox/

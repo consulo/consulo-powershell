@@ -1,102 +1,53 @@
-<!--
-SPDX-FileCopyrightText: 2018-2019 Andrey Dernov <https://github.com/ant-druha/>
-SPDX-FileCopyrightText: 2023-2026 intellij-powershell contributors <https://github.com/intellij-powershell/intellij-powershell>
+# PowerShell for Consulo
 
-SPDX-License-Identifier: Apache-2.0
--->
-
-# intellij-powershell [![JetBrains Plugins][badge-plugins]][plugin-repository]
-Adds PowerShell language support to [IntelliJ-based](https://www.jetbrains.com/products.html?type=ide) IDEs.
-
-### Usage:
-Install the plugin [from IDE](https://www.jetbrains.com/help/idea/managing-plugins.html#repos) or download it from [IntelliJ plugins repository](https://plugins.jetbrains.com/plugin/10249-powershell) and choose to [install from disk](https://www.jetbrains.com/help/idea/managing-plugins.html#installing-plugins-from-disk).
-
+PowerShell language support, script execution, and debugging for Consulo.
 
 ## Features
 
-#### Editor:
-- Syntax highlighting.
-- Code completion based on [PowerShellEditorServices][powershell-editor-services].
-- [PSScriptAnalyzer][ps-script-analyzer] code checker inspections in Editor.
-- [Language Injections](https://www.jetbrains.com/help/idea/using-language-injections.html) in strings.
-- [Colors and Fonts customization](https://www.jetbrains.com/help/idea/configuring-colors-and-fonts.html).
-- [Code style and reformat](https://www.jetbrains.com/help/idea/using-code-editor.html#reformat_rearrange_code).
-- [Live templates](https://www.jetbrains.com/help/idea/using-live-templates.html) (code snippets).
+- Syntax highlighting, brace matching, comments, and code folding.
+- Structure view, navigation, find usages, and rename refactoring.
+- Code formatting, file templates, and language injection.
+- Run configurations with executable, script path, working directory, interpreter options, and script arguments.
+- Optional debugging with breakpoints, stepping, stack frames, variables, watches, and expression evaluation.
 
-#### Refactoring
-- [Rename](https://www.jetbrains.com/help/idea/rename-refactorings.html).
+## Requirements
 
-#### Navigation
-- Variables and declared types reference resolve and find usages.
-- [Structure view](https://www.jetbrains.com/help/idea/viewing-structure-of-a-source-file.html).
+Install [PowerShell](https://github.com/PowerShell/PowerShell) separately. Run
+configurations use `pwsh` by default; select another executable when needed,
+including `powershell.exe` on Windows.
 
-#### Execution
-- [Run Configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html).
-- Script debugging.
-- Integrated PowerShell Console (Tools | PowerShell Console... action).
-- Remote files editing with 'psedit' command in the integrated PowerShell console (see [psedit support][docs.remote-file-editing]).
+For debugging, also install the Consulo DAP plugin (`consulo.dap`) and
+[PowerShell Editor Services](https://github.com/PowerShell/PowerShellEditorServices).
+Editing and script execution work without DAP.
 
-Settings
---------
-The **PowerShell** run configuration uses the selected terminal encoding (UTF-8 by default).
+## Run a script
 
-Open **Advanced settings** and look for **Terminal character encoding** if you want to change that.
+Open a `.ps1` file and use its run gutter icon, or create a PowerShell run
+configuration. Set the PowerShell executable and script path, then choose **Run**.
+Working directory, interpreter options, and script arguments are optional.
 
-Third-Party Software
---------------------
-This plugin bundles the following third-party software:
+## Debug a script
 
-- [PowerShell Editor Services][powershell-editor-services],
-- [PSScriptAnalyzer][ps-script-analyzer].
+In **Settings | Execution | PowerShell Debugger**, select the Editor Services
+directory or its `Start-EditorServices.ps1`. Set a breakpoint in the script and
+choose **Debug** for a PowerShell run configuration.
 
-Documentation
--------------
-- [Changelog][docs.changelog]
-- [Contributor Guide][docs.contributing]
-- [Maintainership][docs.maintainership]
+## Build
 
-License
--------
-The project is distributed under the terms of [the Apache 2.0 license][docs.license]
-(unless a particular file states otherwise).
+Use JDK 25 and Maven 3.9 or newer:
 
-The license indication in the project's sources is compliant with the [REUSE specification v3.3][reuse.spec].
+```sh
+mvn package -T 1C -Dmaven.test.skip=true
+```
 
-<!-- REUSE-IgnoreStart -->
-<!--
-  Prepared with help of the PowerShell script, requires REUSE tool installation:
+To produce the installable plugin archive:
 
-  ./src/scripts/Get-CopyrightStatements.ps1
--->
+```sh
+BUILD_NUMBER=SNAPSHOT mvn package -T 1C -Dmaven.test.skip=true
+```
 
-Copyright:
+Install `plugin/target/consulo.powershell.consulo-plugin`.
 
-- 2017-2022 Andrey Dernov <https://github.com/ant-druha/>
-- 2017 Guillaume Tâche
-- 2017-2018 intellij-lsp contributors <https://github.com/gtache/intellij-lsp>
-- 2019-2026 intellij-powershell contributors <https://github.com/intellij-powershell/intellij-powershell>
+## License
 
-<!-- REUSE-IgnoreEnd -->
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-[badge-plugins]: https://img.shields.io/jetbrains/plugin/v/10249?label=powershell
-[docs.changelog]: ./CHANGELOG.md
-[docs.contributing]: ./CONTRIBUTING.md
-[docs.license]: ./LICENSE
-[docs.maintainership]: ./MAINTAINERSHIP.md
-[docs.remote-file-editing]: ./doc/remote-file-editing.md
-[plugin-repository]: https://plugins.jetbrains.com/plugin/10249-powershell
-[powershell-editor-services]: https://github.com/PowerShell/PowerShellEditorServices
-[ps-script-analyzer]: https://github.com/PowerShell/PSScriptAnalyzer
-[reuse.spec]: https://reuse.software/spec-3.3/
+[Apache License 2.0](LICENSE). See [NOTICE.txt](NOTICE.txt) for attribution.
